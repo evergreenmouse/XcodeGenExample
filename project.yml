@@ -13,7 +13,9 @@ targets:
     sources:
       - path: "DemoGen"
     dependencies:
+      - target: MainScreen
       - target: MoreScreen
+      - target: SerialsScreen
     settings:
       base:
         DISPLAY_NAME: "Wake on LAN"
