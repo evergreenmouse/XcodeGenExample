@@ -24,27 +24,20 @@ targets:
       - Framework
     templateAttributes:
       frameworkName: MainScreen
-    deploymentTarget: 14.1
-    sources:
-      - path: "DemoGen/Modules/${frameworkName}"
+    
 
   MoreScreen:
     templates:
       - Framework
     templateAttributes:
       frameworkName: MoreScreen
-    deploymentTarget: 14.1
-    sources:
-      - path: "DemoGen/Modules/${frameworkName}"
 
   SerialsScreen:
     templates:
       - Framework
     templateAttributes:
       frameworkName: SerialsScreen
-    deploymentTarget: 14.1
-    sources:
-      - path: "DemoGen/Modules/${frameworkName}"
+    
 
 targetTemplates:
   Framework:
@@ -53,3 +46,6 @@ targetTemplates:
         INFOPLIST_FILE: "DemoGen/Modules/${frameworkName}/Info.plist"
     platform: iOS
     type: framework
+    deploymentTarget: 14.1
+    sources:
+      - path: "DemoGen/Modules/${frameworkName}"
